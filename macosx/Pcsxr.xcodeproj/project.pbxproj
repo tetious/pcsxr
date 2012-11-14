@@ -1,0 +1,1068 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28F0C3C6146521A700A90285 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F0C3C4146521A700A90285 /* Configuration.xib */; };
+		28F0C3C9146521B000A90285 /* PCSXR.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F0C3C7146521B000A90285 /* PCSXR.xib */; };
+		28F0C3CC146521B700A90285 /* AddPluginSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F0C3CA146521B700A90285 /* AddPluginSheet.xib */; };
+		2B143D06078A2CBD00AF745A /* PCSXR.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B143D01078A2CBD00AF745A /* PCSXR.icns */; };
+		2B143D07078A2CBD00AF745A /* pcsxrfreeze.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B143D02078A2CBD00AF745A /* pcsxrfreeze.icns */; };
+		2B143D08078A2CBD00AF745A /* pcsxrmemcard.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B143D03078A2CBD00AF745A /* pcsxrmemcard.icns */; };
+		2B143D09078A2CBD00AF745A /* psxbios.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B143D04078A2CBD00AF745A /* psxbios.icns */; };
+		2B143D0A078A2CBD00AF745A /* psxplugin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B143D05078A2CBD00AF745A /* psxplugin.icns */; };
+		2B4DE99205FF9307003EFEF0 /* PluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DE98E05FF9307003EFEF0 /* PluginController.m */; };
+		2BB3D6A405427FE200831ACB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BA178B20514CE260026D74D /* InfoPlist.strings */; };
+		2BB3D6A705427FE200831ACB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2BBB1786051E0D9700B84448 /* Credits.rtf */; };
+		2BB3D6BE05427FE200831ACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA178A505148D9D0026D74D /* main.m */; };
+		2BB3D6BF05427FE200831ACB /* PcsxrController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B75FD3D051C56D200D12034 /* PcsxrController.m */; };
+		2BB3D6C005427FE200831ACB /* ConfigurationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B75FD4B051C8A7400D12034 /* ConfigurationController.m */; };
+		2BB3D6C105427FE200831ACB /* PluginList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB1127051DC00500B84448 /* PluginList.m */; };
+		2BB3D6C205427FE200831ACB /* EmuThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB1792051E113B00B84448 /* EmuThread.m */; };
+		2BB3D6C305427FE200831ACB /* Plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB17DA051E4D0F00B84448 /* Plugin.c */; };
+		2BB3D6C405427FE200831ACB /* PcsxrPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA44361052DB2EA00E21DDD /* PcsxrPlugin.m */; };
+		2BB3D6C605427FE200831ACB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4786204C7FD3600CAB520 /* Cocoa.framework */; };
+		2BB3D6C805427FE200831ACB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6E8AB404C8327C0017A3B1 /* IOKit.framework */; };
+		5586CD9714AFADD9008EF4EE /* PeopsSpuSDL.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 71AD2DD110C356FD00365243 /* PeopsSpuSDL.psxplugin */; };
+		5586CD9814AFADD9008EF4EE /* PeopsSpuAL.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 28B467F11463D0020083F129 /* PeopsSpuAL.psxplugin */; };
+		559366CA12B694DF004ACC1E /* iR3000A-64.c in Sources */ = {isa = PBXBuildFile; fileRef = 559366C112B694DF004ACC1E /* iR3000A-64.c */; };
+		559366CB12B694DF004ACC1E /* ix86-64.c in Sources */ = {isa = PBXBuildFile; fileRef = 559366C212B694DF004ACC1E /* ix86-64.c */; };
+		559366CD12B694DF004ACC1E /* ix86_cpudetect.c in Sources */ = {isa = PBXBuildFile; fileRef = 559366C512B694DF004ACC1E /* ix86_cpudetect.c */; };
+		559366CE12B694DF004ACC1E /* ix86_fpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 559366C612B694DF004ACC1E /* ix86_fpu.c */; };
+		559366CF12B694DF004ACC1E /* ix86_mmx.c in Sources */ = {isa = PBXBuildFile; fileRef = 559366C712B694DF004ACC1E /* ix86_mmx.c */; };
+		559366D012B694DF004ACC1E /* ix86_sse.c in Sources */ = {isa = PBXBuildFile; fileRef = 559366C812B694DF004ACC1E /* ix86_sse.c */; };
+		559DACBB146C68C500C5DF71 /* DFNet.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 559DACAE146C647E00C5DF71 /* DFNet.psxplugin */; };
+		559DACEE146C72FF00C5DF71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 559DACEC146C72FF00C5DF71 /* Localizable.strings */; };
+		55A90220147D7C380037E18F /* PcsxrMemCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9021F147D7C380037E18F /* PcsxrMemCardController.m */; };
+		55A90223147D7C7A0037E18F /* MemCardManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A90221147D7C7A0037E18F /* MemCardManager.xib */; };
+		55A90229147D89380037E18F /* PcsxrMemoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A90228147D89380037E18F /* PcsxrMemoryObject.m */; };
+		55BBA693149455E1003B2CEC /* PcsxrMemCardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBA692149455E1003B2CEC /* PcsxrMemCardHandler.m */; };
+		55BBA69614945628003B2CEC /* PcsxrPluginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBA69514945628003B2CEC /* PcsxrPluginHandler.m */; };
+		55BBA69914953887003B2CEC /* PcsxrDiscHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBA69814953887003B2CEC /* PcsxrDiscHandler.m */; };
+		55BBA69C1495839A003B2CEC /* PcsxrFreezeStateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBA69B1495839A003B2CEC /* PcsxrFreezeStateHandler.m */; };
+		55C7A214148B2B3800C22ABC /* PcsxrMemCardDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C7A216148B2B3800C22ABC /* PcsxrMemCardDocument.xib */; };
+		712FD1E81093096F00575A92 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 712FD1E51093096F00575A92 /* debug.c */; };
+		712FD1E91093096F00575A92 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 712FD1E61093096F00575A92 /* socket.c */; };
+		713B530E110B75650002F164 /* ppf.c in Sources */ = {isa = PBXBuildFile; fileRef = 713B530C110B75650002F164 /* ppf.c */; };
+		713CB2E411FC49DA0033B6A8 /* DFCdrom.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 71F93F6C11FB8E9D007A5A7C /* DFCdrom.psxplugin */; };
+		7192F42A129C412E0042D946 /* gpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 7192F428129C412E0042D946 /* gpu.c */; };
+		719594B211AEFE8C004AD686 /* psxcommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 719594B011AEFE8C004AD686 /* psxcommon.c */; };
+		71AD2DF510C3575C00365243 /* PeopsSoftGL.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 71AD2DDC10C3570900365243 /* PeopsSoftGL.psxplugin */; };
+		71D888D6130F04F100F150FF /* PeopsXGL.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 71D888D4130F04DC00F150FF /* PeopsXGL.psxplugin */; };
+		71F2C0881200B6B000322AD9 /* DFInput.psxplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 71F2C0861200B69B00322AD9 /* DFInput.psxplugin */; };
+		71F4C5890FDED12800529849 /* cdriso.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5600FDED12800529849 /* cdriso.c */; };
+		71F4C58B0FDED12800529849 /* cdrom.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5620FDED12800529849 /* cdrom.c */; };
+		71F4C58D0FDED12800529849 /* cheat.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5640FDED12800529849 /* cheat.c */; };
+		71F4C5910FDED12800529849 /* decode_xa.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5680FDED12800529849 /* decode_xa.c */; };
+		71F4C5930FDED12800529849 /* disr3000a.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C56A0FDED12800529849 /* disr3000a.c */; };
+		71F4C5940FDED12800529849 /* gte.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C56B0FDED12800529849 /* gte.c */; };
+		71F4C5960FDED12800529849 /* mdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C56D0FDED12800529849 /* mdec.c */; };
+		71F4C5980FDED12800529849 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C56F0FDED12800529849 /* misc.c */; };
+		71F4C59A0FDED12800529849 /* plugins.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5710FDED12800529849 /* plugins.c */; };
+		71F4C59D0FDED12800529849 /* psxbios.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5740FDED12800529849 /* psxbios.c */; };
+		71F4C5A00FDED12800529849 /* psxcounters.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5770FDED12800529849 /* psxcounters.c */; };
+		71F4C5A20FDED12800529849 /* psxdma.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5790FDED12800529849 /* psxdma.c */; };
+		71F4C5A40FDED12800529849 /* psxhle.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C57B0FDED12800529849 /* psxhle.c */; };
+		71F4C5A60FDED12800529849 /* psxhw.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C57D0FDED12800529849 /* psxhw.c */; };
+		71F4C5A80FDED12800529849 /* psxinterpreter.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C57F0FDED12800529849 /* psxinterpreter.c */; };
+		71F4C5A90FDED12800529849 /* psxmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5800FDED12800529849 /* psxmem.c */; };
+		71F4C5AB0FDED12800529849 /* r3000a.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5820FDED12800529849 /* r3000a.c */; };
+		71F4C5AD0FDED12800529849 /* sio.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5840FDED12800529849 /* sio.c */; };
+		71F4C5AF0FDED12800529849 /* spu.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5860FDED12800529849 /* spu.c */; };
+		71F4C5B90FDED16D00529849 /* iR3000A.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5B50FDED16D00529849 /* iR3000A.c */; };
+		71F4C5BA0FDED16D00529849 /* ix86.c in Sources */ = {isa = PBXBuildFile; fileRef = 71F4C5B60FDED16D00529849 /* ix86.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2BB3D6D005427FE200831ACB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		2BD707B705559AE300CB5D9B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			filePatterns = pasm.s;
+			fileType = sourcecode.asm;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).o",
+			);
+			script = "as -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).o $(INPUT_FILE_PATH)";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		28B467F01463D0020083F129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5599695E13AFCD2900B0216B;
+			remoteInfo = PeopsAL;
+		};
+		559DAC45146BA61400C5DF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5599693613AFCD2900B0216B;
+			remoteInfo = PeopsAL;
+		};
+		559DACAD146C647E00C5DF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559DACA3146C647E00C5DF71 /* DFNet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = DFNet;
+		};
+		559DACB9146C68B700C5DF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559DACA3146C647E00C5DF71 /* DFNet.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = DFNet;
+		};
+		713CB2DD11FC49720033B6A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71F93F6311FB8E9D007A5A7C /* DFCdrom.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = DFCdrom;
+		};
+		71AD2DD010C356FD00365243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = PeopsSPU;
+		};
+		71AD2DDB10C3570900365243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD2DD210C3570900365243 /* PeopsSoftGPU.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BAF50930632BB1A00DB9A16;
+			remoteInfo = gpuPeopsSoftGL;
+		};
+		71AD2DE810C3572200365243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = PeopsSPU;
+		};
+		71AD2DEA10C3572500365243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD2DD210C3570900365243 /* PeopsSoftGPU.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BAF50920632BB1A00DB9A16;
+			remoteInfo = gpuPeopsSoftGL;
+		};
+		71D888D3130F04DC00F150FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D888CE130F04DC00F150FF /* PeopsXGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BAF50930632BB1A00DB9A16;
+			remoteInfo = gpuPeopsXGL;
+		};
+		71D88A00130F090400F150FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D888CE130F04DC00F150FF /* PeopsXGL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BAF50920632BB1A00DB9A16;
+			remoteInfo = gpuPeopsXGL;
+		};
+		71F2C0851200B69B00322AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71F2C07E1200B69B00322AD9 /* DFInput.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = DFInput;
+		};
+		71F2C0BB1200B75100322AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71F2C07E1200B69B00322AD9 /* DFInput.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = DFInput;
+		};
+		71F93F6B11FB8E9D007A5A7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71F93F6311FB8E9D007A5A7C /* DFCdrom.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = DFCdrom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71AD2DF010C3573400365243 /* Copy PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5586CD9714AFADD9008EF4EE /* PeopsSpuSDL.psxplugin in Copy PlugIns */,
+				5586CD9814AFADD9008EF4EE /* PeopsSpuAL.psxplugin in Copy PlugIns */,
+				559DACBB146C68C500C5DF71 /* DFNet.psxplugin in Copy PlugIns */,
+				71D888D6130F04F100F150FF /* PeopsXGL.psxplugin in Copy PlugIns */,
+				71F2C0881200B6B000322AD9 /* DFInput.psxplugin in Copy PlugIns */,
+				713CB2E411FC49DA0033B6A8 /* DFCdrom.psxplugin in Copy PlugIns */,
+				71AD2DF510C3575C00365243 /* PeopsSoftGL.psxplugin in Copy PlugIns */,
+			);
+			name = "Copy PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28F0C3C5146521A700A90285 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Configuration.xib; sourceTree = "<group>"; };
+		28F0C3C8146521B000A90285 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = PCSXR.xib; sourceTree = "<group>"; };
+		28F0C3CB146521B700A90285 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = AddPluginSheet.xib; sourceTree = "<group>"; };
+		2B143D01078A2CBD00AF745A /* PCSXR.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PCSXR.icns; sourceTree = "<group>"; };
+		2B143D02078A2CBD00AF745A /* pcsxrfreeze.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pcsxrfreeze.icns; sourceTree = "<group>"; };
+		2B143D03078A2CBD00AF745A /* pcsxrmemcard.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pcsxrmemcard.icns; sourceTree = "<group>"; };
+		2B143D04078A2CBD00AF745A /* psxbios.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = psxbios.icns; sourceTree = "<group>"; };
+		2B143D05078A2CBD00AF745A /* psxplugin.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = psxplugin.icns; sourceTree = "<group>"; };
+		2B2189D204D96C7A00179945 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		2B4DE98D05FF9307003EFEF0 /* PluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginController.h; sourceTree = "<group>"; };
+		2B4DE98E05FF9307003EFEF0 /* PluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginController.m; sourceTree = "<group>"; };
+		2B690C760635C65C00CDA575 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = /System/Library/Frameworks/ExceptionHandling.framework; sourceTree = "<absolute>"; };
+		2B6E8AB404C8327C0017A3B1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		2B75FD3C051C56D200D12034 /* PcsxrController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PcsxrController.h; sourceTree = "<group>"; };
+		2B75FD3D051C56D200D12034 /* PcsxrController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PcsxrController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2B75FD4A051C8A7400D12034 /* ConfigurationController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ConfigurationController.h; sourceTree = "<group>"; };
+		2B75FD4B051C8A7400D12034 /* ConfigurationController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConfigurationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2B976C00074C14B4007C050A /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+		2BA178A505148D9D0026D74D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2BA178B30514CE260026D74D /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		2BA44360052DB2EA00E21DDD /* PcsxrPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrPlugin.h; sourceTree = "<group>"; };
+		2BA44361052DB2EA00E21DDD /* PcsxrPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PcsxrPlugin.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2BB3D6CF05427FE200831ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BB3D6D105427FE200831ACB /* PCSXR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCSXR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBB1126051DC00500B84448 /* PluginList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginList.h; sourceTree = "<group>"; };
+		2BBB1127051DC00500B84448 /* PluginList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PluginList.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2BBB1787051E0D9700B84448 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = Credits.rtf; sourceTree = "<group>"; };
+		2BBB1791051E113B00B84448 /* EmuThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuThread.h; sourceTree = "<group>"; };
+		2BBB1792051E113B00B84448 /* EmuThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 2; path = EmuThread.m; sourceTree = "<group>"; };
+		2BBB17DA051E4D0F00B84448 /* Plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Plugin.c; sourceTree = SOURCE_ROOT; };
+		2BC4786204C7FD3600CAB520 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		559366C012B694DF004ACC1E /* iGte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGte.h; sourceTree = "<group>"; };
+		559366C112B694DF004ACC1E /* iR3000A-64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iR3000A-64.c"; sourceTree = "<group>"; };
+		559366C212B694DF004ACC1E /* ix86-64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ix86-64.c"; sourceTree = "<group>"; };
+		559366C312B694DF004ACC1E /* ix86-64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ix86-64.h"; sourceTree = "<group>"; };
+		559366C412B694DF004ACC1E /* ix86_3dnow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ix86_3dnow.c; sourceTree = "<group>"; };
+		559366C512B694DF004ACC1E /* ix86_cpudetect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ix86_cpudetect.c; sourceTree = "<group>"; };
+		559366C612B694DF004ACC1E /* ix86_fpu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ix86_fpu.c; sourceTree = "<group>"; };
+		559366C712B694DF004ACC1E /* ix86_mmx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ix86_mmx.c; sourceTree = "<group>"; };
+		559366C812B694DF004ACC1E /* ix86_sse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ix86_sse.c; sourceTree = "<group>"; };
+		559DACA3146C647E00C5DF71 /* DFNet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DFNet.xcodeproj; path = plugins/DFNet/DFNet.xcodeproj; sourceTree = "<group>"; };
+		559DACED146C72FF00C5DF71 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
+		55A9021E147D7C380037E18F /* PcsxrMemCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrMemCardController.h; sourceTree = "<group>"; };
+		55A9021F147D7C380037E18F /* PcsxrMemCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcsxrMemCardController.m; sourceTree = "<group>"; };
+		55A90222147D7C7A0037E18F /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MemCardManager.xib; sourceTree = "<group>"; };
+		55A90227147D89380037E18F /* PcsxrMemoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrMemoryObject.h; sourceTree = "<group>"; };
+		55A90228147D89380037E18F /* PcsxrMemoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcsxrMemoryObject.m; sourceTree = "<group>"; };
+		55AD382A160C200000E9EA20 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		55AD382B160C200000E9EA20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55BBA690149454DE003B2CEC /* PcsxrFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrFileHandle.h; sourceTree = "<group>"; };
+		55BBA691149455E1003B2CEC /* PcsxrMemCardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrMemCardHandler.h; sourceTree = "<group>"; };
+		55BBA692149455E1003B2CEC /* PcsxrMemCardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcsxrMemCardHandler.m; sourceTree = "<group>"; };
+		55BBA69414945628003B2CEC /* PcsxrPluginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrPluginHandler.h; sourceTree = "<group>"; };
+		55BBA69514945628003B2CEC /* PcsxrPluginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcsxrPluginHandler.m; sourceTree = "<group>"; };
+		55BBA69714953887003B2CEC /* PcsxrDiscHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrDiscHandler.h; sourceTree = "<group>"; };
+		55BBA69814953887003B2CEC /* PcsxrDiscHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcsxrDiscHandler.m; sourceTree = "<group>"; };
+		55BBA69A14958399003B2CEC /* PcsxrFreezeStateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcsxrFreezeStateHandler.h; sourceTree = "<group>"; };
+		55BBA69B1495839A003B2CEC /* PcsxrFreezeStateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcsxrFreezeStateHandler.m; sourceTree = "<group>"; };
+		55C7A215148B2B3800C22ABC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PcsxrMemCardDocument.xib; sourceTree = "<group>"; };
+		712FD1E51093096F00575A92 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		712FD1E61093096F00575A92 /* socket.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
+		712FD1E71093096F00575A92 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		713B530C110B75650002F164 /* ppf.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = ppf.c; sourceTree = "<group>"; };
+		713B530D110B75650002F164 /* ppf.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = ppf.h; sourceTree = "<group>"; };
+		7161C2810FDED6D000225F97 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		7161C2970FDED75300225F97 /* ExtendedKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedKeys.h; sourceTree = "<group>"; };
+		7192F428129C412E0042D946 /* gpu.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = gpu.c; sourceTree = "<group>"; };
+		7192F429129C412E0042D946 /* gpu.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = gpu.h; sourceTree = "<group>"; };
+		719594AF11AEFE8C004AD686 /* gte_divider.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = gte_divider.h; sourceTree = "<group>"; };
+		719594B011AEFE8C004AD686 /* psxcommon.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = psxcommon.c; sourceTree = "<group>"; };
+		71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PeopsSPU.xcodeproj; path = plugins/DFSound/PeopsSPU.xcodeproj; sourceTree = SOURCE_ROOT; };
+		71AD2DD210C3570900365243 /* PeopsSoftGPU.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PeopsSoftGPU.xcodeproj; path = plugins/DFXVideo/PeopsSoftGPU.xcodeproj; sourceTree = SOURCE_ROOT; };
+		71D888CE130F04DC00F150FF /* PeopsXGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PeopsXGL.xcodeproj; path = plugins/PeopsXgl/PeopsXGL.xcodeproj; sourceTree = "<group>"; };
+		71F2C07E1200B69B00322AD9 /* DFInput.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DFInput.xcodeproj; path = plugins/DFInput/DFInput.xcodeproj; sourceTree = "<group>"; };
+		71F4C5600FDED12800529849 /* cdriso.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = cdriso.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		71F4C5610FDED12800529849 /* cdriso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdriso.h; sourceTree = "<group>"; };
+		71F4C5620FDED12800529849 /* cdrom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 2; path = cdrom.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		71F4C5630FDED12800529849 /* cdrom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdrom.h; sourceTree = "<group>"; };
+		71F4C5640FDED12800529849 /* cheat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cheat.c; sourceTree = "<group>"; };
+		71F4C5650FDED12800529849 /* cheat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cheat.h; sourceTree = "<group>"; };
+		71F4C5660FDED12800529849 /* coff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coff.h; sourceTree = "<group>"; };
+		71F4C5670FDED12800529849 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		71F4C5680FDED12800529849 /* decode_xa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode_xa.c; sourceTree = "<group>"; };
+		71F4C5690FDED12800529849 /* decode_xa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_xa.h; sourceTree = "<group>"; };
+		71F4C56A0FDED12800529849 /* disr3000a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = disr3000a.c; sourceTree = "<group>"; };
+		71F4C56B0FDED12800529849 /* gte.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gte.c; sourceTree = "<group>"; };
+		71F4C56C0FDED12800529849 /* gte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gte.h; sourceTree = "<group>"; };
+		71F4C56D0FDED12800529849 /* mdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mdec.c; sourceTree = "<group>"; };
+		71F4C56E0FDED12800529849 /* mdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdec.h; sourceTree = "<group>"; };
+		71F4C56F0FDED12800529849 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		71F4C5700FDED12800529849 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		71F4C5710FDED12800529849 /* plugins.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plugins.c; sourceTree = "<group>"; };
+		71F4C5720FDED12800529849 /* plugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugins.h; sourceTree = "<group>"; };
+		71F4C5730FDED12800529849 /* psemu_plugin_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psemu_plugin_defs.h; sourceTree = "<group>"; };
+		71F4C5740FDED12800529849 /* psxbios.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxbios.c; sourceTree = "<group>"; };
+		71F4C5750FDED12800529849 /* psxbios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxbios.h; sourceTree = "<group>"; };
+		71F4C5760FDED12800529849 /* psxcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxcommon.h; sourceTree = "<group>"; };
+		71F4C5770FDED12800529849 /* psxcounters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxcounters.c; sourceTree = "<group>"; };
+		71F4C5780FDED12800529849 /* psxcounters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxcounters.h; sourceTree = "<group>"; };
+		71F4C5790FDED12800529849 /* psxdma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxdma.c; sourceTree = "<group>"; };
+		71F4C57A0FDED12800529849 /* psxdma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxdma.h; sourceTree = "<group>"; };
+		71F4C57B0FDED12800529849 /* psxhle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxhle.c; sourceTree = "<group>"; };
+		71F4C57C0FDED12800529849 /* psxhle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxhle.h; sourceTree = "<group>"; };
+		71F4C57D0FDED12800529849 /* psxhw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxhw.c; sourceTree = "<group>"; };
+		71F4C57E0FDED12800529849 /* psxhw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxhw.h; sourceTree = "<group>"; };
+		71F4C57F0FDED12800529849 /* psxinterpreter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxinterpreter.c; sourceTree = "<group>"; };
+		71F4C5800FDED12800529849 /* psxmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psxmem.c; sourceTree = "<group>"; };
+		71F4C5810FDED12800529849 /* psxmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psxmem.h; sourceTree = "<group>"; };
+		71F4C5820FDED12800529849 /* r3000a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = r3000a.c; sourceTree = "<group>"; };
+		71F4C5830FDED12800529849 /* r3000a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3000a.h; sourceTree = "<group>"; };
+		71F4C5840FDED12800529849 /* sio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sio.c; sourceTree = "<group>"; };
+		71F4C5850FDED12800529849 /* sio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sio.h; sourceTree = "<group>"; };
+		71F4C5860FDED12800529849 /* spu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spu.c; sourceTree = "<group>"; };
+		71F4C5870FDED12800529849 /* spu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spu.h; sourceTree = "<group>"; };
+		71F4C5880FDED12800529849 /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		71F4C5B40FDED16D00529849 /* iGte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGte.h; sourceTree = "<group>"; };
+		71F4C5B50FDED16D00529849 /* iR3000A.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iR3000A.c; sourceTree = "<group>"; };
+		71F4C5B60FDED16D00529849 /* ix86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ix86.c; sourceTree = "<group>"; };
+		71F4C5B70FDED16D00529849 /* ix86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ix86.h; sourceTree = "<group>"; };
+		71F703A611B3A673007DD5C5 /* sjisfont.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = sjisfont.h; sourceTree = "<group>"; };
+		71F93F6311FB8E9D007A5A7C /* DFCdrom.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DFCdrom.xcodeproj; path = plugins/DFCdrom/DFCdrom.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BB3D6C505427FE200831ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB3D6C605427FE200831ACB /* Cocoa.framework in Frameworks */,
+				2BB3D6C805427FE200831ACB /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0249A662FF388D9811CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				55AD382A160C200000E9EA20 /* AppKit.framework */,
+				55AD382B160C200000E9EA20 /* Foundation.framework */,
+				2B976C00074C14B4007C050A /* Kernel.framework */,
+				2BC4786204C7FD3600CAB520 /* Cocoa.framework */,
+				2B6E8AB404C8327C0017A3B1 /* IOKit.framework */,
+				2B2189D204D96C7A00179945 /* CoreFoundation.framework */,
+				2B690C760635C65C00CDA575 /* ExceptionHandling.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB7794FE84155DC02AAC07 /* Pcsxr */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				0249A662FF388D9811CA2CEA /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				2BB3D6CF05427FE200831ACB /* Info.plist */,
+			);
+			name = Pcsxr;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2BCE23B204C6B52C007C2DA3 /* libpcsxcore */,
+				2BC4787804C7FDBD00CAB520 /* MacOSX */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BBD6C1D04C893F500A83E33 /* PlugIns */,
+				2BB3D6D105427FE200831ACB /* PCSXR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B143D00078A2CBD00AF745A /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B143D01078A2CBD00AF745A /* PCSXR.icns */,
+				2B143D02078A2CBD00AF745A /* pcsxrfreeze.icns */,
+				2B143D03078A2CBD00AF745A /* pcsxrmemcard.icns */,
+				2B143D04078A2CBD00AF745A /* psxbios.icns */,
+				2B143D05078A2CBD00AF745A /* psxplugin.icns */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		2BA178AD0514CE260026D74D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BBB1786051E0D9700B84448 /* Credits.rtf */,
+				28F0C3C4146521A700A90285 /* Configuration.xib */,
+				2BA178B20514CE260026D74D /* InfoPlist.strings */,
+				559DACEC146C72FF00C5DF71 /* Localizable.strings */,
+				28F0C3C7146521B000A90285 /* PCSXR.xib */,
+				28F0C3CA146521B700A90285 /* AddPluginSheet.xib */,
+				55A90221147D7C7A0037E18F /* MemCardManager.xib */,
+				55C7A216148B2B3800C22ABC /* PcsxrMemCardDocument.xib */,
+			);
+			name = Resources;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		2BBD6C1D04C893F500A83E33 /* PlugIns */ = {
+			isa = PBXGroup;
+			children = (
+				559DACA3146C647E00C5DF71 /* DFNet.xcodeproj */,
+				71D888CE130F04DC00F150FF /* PeopsXGL.xcodeproj */,
+				71F2C07E1200B69B00322AD9 /* DFInput.xcodeproj */,
+				71F93F6311FB8E9D007A5A7C /* DFCdrom.xcodeproj */,
+				71AD2DD210C3570900365243 /* PeopsSoftGPU.xcodeproj */,
+				71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */,
+			);
+			name = PlugIns;
+			sourceTree = "<group>";
+		};
+		2BC4787804C7FDBD00CAB520 /* MacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				2BA178AD0514CE260026D74D /* Resources */,
+				2B143D00078A2CBD00AF745A /* icons */,
+				7161C2810FDED6D000225F97 /* config.h */,
+				2BA178A505148D9D0026D74D /* main.m */,
+				2BBB17DA051E4D0F00B84448 /* Plugin.c */,
+				2B75FD3C051C56D200D12034 /* PcsxrController.h */,
+				2B75FD3D051C56D200D12034 /* PcsxrController.m */,
+				2B75FD4A051C8A7400D12034 /* ConfigurationController.h */,
+				2B75FD4B051C8A7400D12034 /* ConfigurationController.m */,
+				2B4DE98D05FF9307003EFEF0 /* PluginController.h */,
+				2B4DE98E05FF9307003EFEF0 /* PluginController.m */,
+				2BBB1791051E113B00B84448 /* EmuThread.h */,
+				2BBB1792051E113B00B84448 /* EmuThread.m */,
+				7161C2970FDED75300225F97 /* ExtendedKeys.h */,
+				2BBB1126051DC00500B84448 /* PluginList.h */,
+				2BBB1127051DC00500B84448 /* PluginList.m */,
+				2BA44360052DB2EA00E21DDD /* PcsxrPlugin.h */,
+				2BA44361052DB2EA00E21DDD /* PcsxrPlugin.m */,
+				55A9021E147D7C380037E18F /* PcsxrMemCardController.h */,
+				55A9021F147D7C380037E18F /* PcsxrMemCardController.m */,
+				55A90227147D89380037E18F /* PcsxrMemoryObject.h */,
+				55A90228147D89380037E18F /* PcsxrMemoryObject.m */,
+				55BBA690149454DE003B2CEC /* PcsxrFileHandle.h */,
+				55BBA691149455E1003B2CEC /* PcsxrMemCardHandler.h */,
+				55BBA692149455E1003B2CEC /* PcsxrMemCardHandler.m */,
+				55BBA69414945628003B2CEC /* PcsxrPluginHandler.h */,
+				55BBA69514945628003B2CEC /* PcsxrPluginHandler.m */,
+				55BBA69714953887003B2CEC /* PcsxrDiscHandler.h */,
+				55BBA69814953887003B2CEC /* PcsxrDiscHandler.m */,
+				55BBA69A14958399003B2CEC /* PcsxrFreezeStateHandler.h */,
+				55BBA69B1495839A003B2CEC /* PcsxrFreezeStateHandler.m */,
+			);
+			name = MacOSX;
+			sourceTree = "<group>";
+		};
+		2BCE23B204C6B52C007C2DA3 /* libpcsxcore */ = {
+			isa = PBXGroup;
+			children = (
+				71F4C5B30FDED15800529849 /* ix86 */,
+				559366BF12B694DF004ACC1E /* ix86_64 */,
+				71F4C5600FDED12800529849 /* cdriso.c */,
+				71F4C5610FDED12800529849 /* cdriso.h */,
+				71F4C5620FDED12800529849 /* cdrom.c */,
+				71F4C5630FDED12800529849 /* cdrom.h */,
+				71F4C5640FDED12800529849 /* cheat.c */,
+				71F4C5650FDED12800529849 /* cheat.h */,
+				71F4C5660FDED12800529849 /* coff.h */,
+				712FD1E51093096F00575A92 /* debug.c */,
+				71F4C5670FDED12800529849 /* debug.h */,
+				71F4C5680FDED12800529849 /* decode_xa.c */,
+				71F4C5690FDED12800529849 /* decode_xa.h */,
+				71F4C56A0FDED12800529849 /* disr3000a.c */,
+				7192F428129C412E0042D946 /* gpu.c */,
+				7192F429129C412E0042D946 /* gpu.h */,
+				71F4C56B0FDED12800529849 /* gte.c */,
+				71F4C56C0FDED12800529849 /* gte.h */,
+				719594AF11AEFE8C004AD686 /* gte_divider.h */,
+				71F4C56D0FDED12800529849 /* mdec.c */,
+				71F4C56E0FDED12800529849 /* mdec.h */,
+				71F4C56F0FDED12800529849 /* misc.c */,
+				71F4C5700FDED12800529849 /* misc.h */,
+				71F4C5710FDED12800529849 /* plugins.c */,
+				71F4C5720FDED12800529849 /* plugins.h */,
+				713B530C110B75650002F164 /* ppf.c */,
+				713B530D110B75650002F164 /* ppf.h */,
+				71F4C5730FDED12800529849 /* psemu_plugin_defs.h */,
+				71F4C5740FDED12800529849 /* psxbios.c */,
+				71F4C5750FDED12800529849 /* psxbios.h */,
+				719594B011AEFE8C004AD686 /* psxcommon.c */,
+				71F4C5760FDED12800529849 /* psxcommon.h */,
+				71F4C5770FDED12800529849 /* psxcounters.c */,
+				71F4C5780FDED12800529849 /* psxcounters.h */,
+				71F4C5790FDED12800529849 /* psxdma.c */,
+				71F4C57A0FDED12800529849 /* psxdma.h */,
+				71F4C57B0FDED12800529849 /* psxhle.c */,
+				71F4C57C0FDED12800529849 /* psxhle.h */,
+				71F4C57D0FDED12800529849 /* psxhw.c */,
+				71F4C57E0FDED12800529849 /* psxhw.h */,
+				71F4C57F0FDED12800529849 /* psxinterpreter.c */,
+				71F4C5800FDED12800529849 /* psxmem.c */,
+				71F4C5810FDED12800529849 /* psxmem.h */,
+				71F4C5820FDED12800529849 /* r3000a.c */,
+				71F4C5830FDED12800529849 /* r3000a.h */,
+				71F4C5840FDED12800529849 /* sio.c */,
+				71F4C5850FDED12800529849 /* sio.h */,
+				71F703A611B3A673007DD5C5 /* sjisfont.h */,
+				712FD1E61093096F00575A92 /* socket.c */,
+				712FD1E71093096F00575A92 /* socket.h */,
+				71F4C5860FDED12800529849 /* spu.c */,
+				71F4C5870FDED12800529849 /* spu.h */,
+				71F4C5880FDED12800529849 /* system.h */,
+			);
+			name = libpcsxcore;
+			path = ../libpcsxcore;
+			sourceTree = "<group>";
+		};
+		559366BF12B694DF004ACC1E /* ix86_64 */ = {
+			isa = PBXGroup;
+			children = (
+				559366C012B694DF004ACC1E /* iGte.h */,
+				559366C112B694DF004ACC1E /* iR3000A-64.c */,
+				559366C212B694DF004ACC1E /* ix86-64.c */,
+				559366C312B694DF004ACC1E /* ix86-64.h */,
+				559366C412B694DF004ACC1E /* ix86_3dnow.c */,
+				559366C512B694DF004ACC1E /* ix86_cpudetect.c */,
+				559366C612B694DF004ACC1E /* ix86_fpu.c */,
+				559366C712B694DF004ACC1E /* ix86_mmx.c */,
+				559366C812B694DF004ACC1E /* ix86_sse.c */,
+			);
+			path = ix86_64;
+			sourceTree = "<group>";
+		};
+		559DACA4146C647E00C5DF71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559DACAE146C647E00C5DF71 /* DFNet.psxplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71AD2DCD10C356FD00365243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71AD2DD110C356FD00365243 /* PeopsSpuSDL.psxplugin */,
+				28B467F11463D0020083F129 /* PeopsSpuAL.psxplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71AD2DD810C3570900365243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71AD2DDC10C3570900365243 /* PeopsSoftGL.psxplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71D888CF130F04DC00F150FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71D888D4130F04DC00F150FF /* PeopsXGL.psxplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71F2C07F1200B69B00322AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71F2C0861200B69B00322AD9 /* DFInput.psxplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71F4C5B30FDED15800529849 /* ix86 */ = {
+			isa = PBXGroup;
+			children = (
+				71F4C5B40FDED16D00529849 /* iGte.h */,
+				71F4C5B50FDED16D00529849 /* iR3000A.c */,
+				71F4C5B60FDED16D00529849 /* ix86.c */,
+				71F4C5B70FDED16D00529849 /* ix86.h */,
+			);
+			path = ix86;
+			sourceTree = "<group>";
+		};
+		71F93F6411FB8E9D007A5A7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71F93F6C11FB8E9D007A5A7C /* DFCdrom.psxplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BB3D68205427FE200831ACB /* PCSXR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71F353F30FD98DFE00CBEC28 /* Build configuration list for PBXNativeTarget "PCSXR" */;
+			buildPhases = (
+				2BB3D6A205427FE200831ACB /* Resources */,
+				2BB3D6A805427FE200831ACB /* Sources */,
+				2BB3D6C505427FE200831ACB /* Frameworks */,
+				71AD2DF010C3573400365243 /* Copy PlugIns */,
+			);
+			buildRules = (
+				2BD707B705559AE300CB5D9B /* PBXBuildRule */,
+				2BB3D6D005427FE200831ACB /* PBXBuildRule */,
+			);
+			dependencies = (
+				559DACBA146C68B700C5DF71 /* PBXTargetDependency */,
+				559DAC46146BA61400C5DF71 /* PBXTargetDependency */,
+				71AD2DE910C3572200365243 /* PBXTargetDependency */,
+				71AD2DEB10C3572500365243 /* PBXTargetDependency */,
+				713CB2DE11FC49720033B6A8 /* PBXTargetDependency */,
+				71F2C0BC1200B75100322AD9 /* PBXTargetDependency */,
+				71D88A01130F090400F150FF /* PBXTargetDependency */,
+			);
+			name = PCSXR;
+			productInstallPath = "$(USER_APPS_DIR)";
+			productName = "Pcsxr-MacOSX";
+			productReference = 2BB3D6D105427FE200831ACB /* PCSXR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 71F353F80FD98DFE00CBEC28 /* Build configuration list for PBXProject "Pcsxr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Pcsxr */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 71F93F6411FB8E9D007A5A7C /* Products */;
+					ProjectRef = 71F93F6311FB8E9D007A5A7C /* DFCdrom.xcodeproj */;
+				},
+				{
+					ProductGroup = 71F2C07F1200B69B00322AD9 /* Products */;
+					ProjectRef = 71F2C07E1200B69B00322AD9 /* DFInput.xcodeproj */;
+				},
+				{
+					ProductGroup = 559DACA4146C647E00C5DF71 /* Products */;
+					ProjectRef = 559DACA3146C647E00C5DF71 /* DFNet.xcodeproj */;
+				},
+				{
+					ProductGroup = 71AD2DD810C3570900365243 /* Products */;
+					ProjectRef = 71AD2DD210C3570900365243 /* PeopsSoftGPU.xcodeproj */;
+				},
+				{
+					ProductGroup = 71AD2DCD10C356FD00365243 /* Products */;
+					ProjectRef = 71AD2DC710C356FD00365243 /* PeopsSPU.xcodeproj */;
+				},
+				{
+					ProductGroup = 71D888CF130F04DC00F150FF /* Products */;
+					ProjectRef = 71D888CE130F04DC00F150FF /* PeopsXGL.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2BB3D68205427FE200831ACB /* PCSXR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		28B467F11463D0020083F129 /* PeopsSpuAL.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PeopsSpuAL.psxplugin;
+			remoteRef = 28B467F01463D0020083F129 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		559DACAE146C647E00C5DF71 /* DFNet.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DFNet.psxplugin;
+			remoteRef = 559DACAD146C647E00C5DF71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		71AD2DD110C356FD00365243 /* PeopsSpuSDL.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PeopsSpuSDL.psxplugin;
+			remoteRef = 71AD2DD010C356FD00365243 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		71AD2DDC10C3570900365243 /* PeopsSoftGL.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PeopsSoftGL.psxplugin;
+			remoteRef = 71AD2DDB10C3570900365243 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		71D888D4130F04DC00F150FF /* PeopsXGL.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PeopsXGL.psxplugin;
+			remoteRef = 71D888D3130F04DC00F150FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		71F2C0861200B69B00322AD9 /* DFInput.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DFInput.psxplugin;
+			remoteRef = 71F2C0851200B69B00322AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		71F93F6C11FB8E9D007A5A7C /* DFCdrom.psxplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DFCdrom.psxplugin;
+			remoteRef = 71F93F6B11FB8E9D007A5A7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BB3D6A205427FE200831ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB3D6A405427FE200831ACB /* InfoPlist.strings in Resources */,
+				2BB3D6A705427FE200831ACB /* Credits.rtf in Resources */,
+				2B143D06078A2CBD00AF745A /* PCSXR.icns in Resources */,
+				2B143D07078A2CBD00AF745A /* pcsxrfreeze.icns in Resources */,
+				2B143D08078A2CBD00AF745A /* pcsxrmemcard.icns in Resources */,
+				2B143D09078A2CBD00AF745A /* psxbios.icns in Resources */,
+				2B143D0A078A2CBD00AF745A /* psxplugin.icns in Resources */,
+				28F0C3C6146521A700A90285 /* Configuration.xib in Resources */,
+				28F0C3C9146521B000A90285 /* PCSXR.xib in Resources */,
+				28F0C3CC146521B700A90285 /* AddPluginSheet.xib in Resources */,
+				559DACEE146C72FF00C5DF71 /* Localizable.strings in Resources */,
+				55A90223147D7C7A0037E18F /* MemCardManager.xib in Resources */,
+				55C7A214148B2B3800C22ABC /* PcsxrMemCardDocument.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BB3D6A805427FE200831ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB3D6BE05427FE200831ACB /* main.m in Sources */,
+				2BB3D6BF05427FE200831ACB /* PcsxrController.m in Sources */,
+				2BB3D6C005427FE200831ACB /* ConfigurationController.m in Sources */,
+				2BB3D6C105427FE200831ACB /* PluginList.m in Sources */,
+				2BB3D6C205427FE200831ACB /* EmuThread.m in Sources */,
+				2BB3D6C305427FE200831ACB /* Plugin.c in Sources */,
+				2BB3D6C405427FE200831ACB /* PcsxrPlugin.m in Sources */,
+				2B4DE99205FF9307003EFEF0 /* PluginController.m in Sources */,
+				71F4C5890FDED12800529849 /* cdriso.c in Sources */,
+				71F4C58B0FDED12800529849 /* cdrom.c in Sources */,
+				71F4C58D0FDED12800529849 /* cheat.c in Sources */,
+				71F4C5910FDED12800529849 /* decode_xa.c in Sources */,
+				71F4C5930FDED12800529849 /* disr3000a.c in Sources */,
+				71F4C5940FDED12800529849 /* gte.c in Sources */,
+				71F4C5960FDED12800529849 /* mdec.c in Sources */,
+				71F4C5980FDED12800529849 /* misc.c in Sources */,
+				71F4C59A0FDED12800529849 /* plugins.c in Sources */,
+				71F4C59D0FDED12800529849 /* psxbios.c in Sources */,
+				71F4C5A00FDED12800529849 /* psxcounters.c in Sources */,
+				71F4C5A20FDED12800529849 /* psxdma.c in Sources */,
+				71F4C5A40FDED12800529849 /* psxhle.c in Sources */,
+				71F4C5A60FDED12800529849 /* psxhw.c in Sources */,
+				71F4C5A80FDED12800529849 /* psxinterpreter.c in Sources */,
+				71F4C5A90FDED12800529849 /* psxmem.c in Sources */,
+				71F4C5AB0FDED12800529849 /* r3000a.c in Sources */,
+				71F4C5AD0FDED12800529849 /* sio.c in Sources */,
+				71F4C5AF0FDED12800529849 /* spu.c in Sources */,
+				71F4C5B90FDED16D00529849 /* iR3000A.c in Sources */,
+				71F4C5BA0FDED16D00529849 /* ix86.c in Sources */,
+				712FD1E81093096F00575A92 /* debug.c in Sources */,
+				712FD1E91093096F00575A92 /* socket.c in Sources */,
+				713B530E110B75650002F164 /* ppf.c in Sources */,
+				719594B211AEFE8C004AD686 /* psxcommon.c in Sources */,
+				7192F42A129C412E0042D946 /* gpu.c in Sources */,
+				559366CA12B694DF004ACC1E /* iR3000A-64.c in Sources */,
+				559366CB12B694DF004ACC1E /* ix86-64.c in Sources */,
+				559366CD12B694DF004ACC1E /* ix86_cpudetect.c in Sources */,
+				559366CE12B694DF004ACC1E /* ix86_fpu.c in Sources */,
+				559366CF12B694DF004ACC1E /* ix86_mmx.c in Sources */,
+				559366D012B694DF004ACC1E /* ix86_sse.c in Sources */,
+				55A90220147D7C380037E18F /* PcsxrMemCardController.m in Sources */,
+				55A90229147D89380037E18F /* PcsxrMemoryObject.m in Sources */,
+				55BBA693149455E1003B2CEC /* PcsxrMemCardHandler.m in Sources */,
+				55BBA69614945628003B2CEC /* PcsxrPluginHandler.m in Sources */,
+				55BBA69914953887003B2CEC /* PcsxrDiscHandler.m in Sources */,
+				55BBA69C1495839A003B2CEC /* PcsxrFreezeStateHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559DAC46146BA61400C5DF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PeopsAL;
+			targetProxy = 559DAC45146BA61400C5DF71 /* PBXContainerItemProxy */;
+		};
+		559DACBA146C68B700C5DF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DFNet;
+			targetProxy = 559DACB9146C68B700C5DF71 /* PBXContainerItemProxy */;
+		};
+		713CB2DE11FC49720033B6A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DFCdrom;
+			targetProxy = 713CB2DD11FC49720033B6A8 /* PBXContainerItemProxy */;
+		};
+		71AD2DE910C3572200365243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PeopsSPU;
+			targetProxy = 71AD2DE810C3572200365243 /* PBXContainerItemProxy */;
+		};
+		71AD2DEB10C3572500365243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gpuPeopsSoftGL;
+			targetProxy = 71AD2DEA10C3572500365243 /* PBXContainerItemProxy */;
+		};
+		71D88A01130F090400F150FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gpuPeopsXGL;
+			targetProxy = 71D88A00130F090400F150FF /* PBXContainerItemProxy */;
+		};
+		71F2C0BC1200B75100322AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DFInput;
+			targetProxy = 71F2C0BB1200B75100322AD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28F0C3C4146521A700A90285 /* Configuration.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F0C3C5146521A700A90285 /* English */,
+			);
+			name = Configuration.xib;
+			sourceTree = "<group>";
+		};
+		28F0C3C7146521B000A90285 /* PCSXR.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F0C3C8146521B000A90285 /* English */,
+			);
+			name = PCSXR.xib;
+			sourceTree = "<group>";
+		};
+		28F0C3CA146521B700A90285 /* AddPluginSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F0C3CB146521B700A90285 /* English */,
+			);
+			name = AddPluginSheet.xib;
+			sourceTree = "<group>";
+		};
+		2BA178B20514CE260026D74D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA178B30514CE260026D74D /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BBB1786051E0D9700B84448 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BBB1787051E0D9700B84448 /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		559DACEC146C72FF00C5DF71 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559DACED146C72FF00C5DF71 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		55A90221147D7C7A0037E18F /* MemCardManager.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55A90222147D7C7A0037E18F /* English */,
+			);
+			name = MemCardManager.xib;
+			sourceTree = "<group>";
+		};
+		55C7A216148B2B3800C22ABC /* PcsxrMemCardDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C7A215148B2B3800C22ABC /* English */,
+			);
+			name = PcsxrMemCardDocument.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71F353F40FD98DFE00CBEC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PCSXRCORE,
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1)",
+					"_MACOSX=1",
+					__MACOSX__,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1 = "PCSXR_VERSION=\\\"1.5\\\" XA_HACK=1";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = "-falign-loops=16";
+				PRODUCT_NAME = PCSXR;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		71F353F50FD98DFE00CBEC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PCSXRCORE,
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1)",
+					"_MACOSX=1",
+					__MACOSX__,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1 = "PCSXR_VERSION=\\\"1.5\\\" XA_HACK=1";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-funroll-loops",
+					"-falign-loops=16",
+				);
+				PRODUCT_NAME = PCSXR;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		71F353F90FD98DFE00CBEC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../libpcsxcore,
+					../macosx,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lz";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		71F353FA0FD98DFE00CBEC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../libpcsxcore,
+					../macosx,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "-fomit-frame-pointer";
+				OTHER_LDFLAGS = "-lz";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71F353F30FD98DFE00CBEC28 /* Build configuration list for PBXNativeTarget "PCSXR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F353F40FD98DFE00CBEC28 /* Debug */,
+				71F353F50FD98DFE00CBEC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71F353F80FD98DFE00CBEC28 /* Build configuration list for PBXProject "Pcsxr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F353F90FD98DFE00CBEC28 /* Debug */,
+				71F353FA0FD98DFE00CBEC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
