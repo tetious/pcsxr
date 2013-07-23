@@ -67,7 +67,7 @@
 	[deviceMenu addItemWithTitle:@"(Keyboard only)"];
 
 	for (i = 0; i < SDL_NumJoysticks(); i++) {
-		[deviceMenu addItemWithTitle:[NSString stringWithUTF8String:SDL_JoystickName(i)]];
+		[deviceMenu addItemWithTitle:[NSString stringWithFormat:@"%@ (%d)", [NSString stringWithUTF8String:SDL_JoystickName(i)], i+1 ]];
 	}
 
 	if (g.cfg.PadDef[which].DevNum >= SDL_NumJoysticks()) {
